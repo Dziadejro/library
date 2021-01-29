@@ -30,6 +30,7 @@ class App extends Component {
       editBookModal: ! this.state.editBookModal
     });
   }
+  //Dodanie nowej książki
   addBook() {
     axios.post('http://localhost:3000/books', this.state.newBookData).then((response) => {
       let { books } = this.state;
@@ -42,6 +43,7 @@ class App extends Component {
       }});
     });
   }
+  //Update nowej książki
   updateBook() {
     let { title, rating } = this.state.editBookData;
 
@@ -55,11 +57,13 @@ class App extends Component {
       })
     });
   }
+  //Edycja książki
   editBook(id, title, rating) {
     this.setState({
       editBookData: { id, title, rating }, editBookModal: !this.state.editBookModal
     });
   }
+  //Usunięcie książki
   deleteBook(id) {
     axios.delete('http://localhost:3000/books/' + id).then((response) => {
       this._refreshBooks();
