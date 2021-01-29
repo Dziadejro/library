@@ -4,6 +4,7 @@ Jest to prosta aplikacja napisana przy użyciu React, Boostrap oraz Axios. Pozwa
 
 ## Instalacja
 Przed instalacją tego projektu należy zainstalować serwer JSON aby API działało poprawnie: https://github.com/Dziadejro/JSON-Serv
+
 *Instrukcja instalacji również znajduje się na tej stronie.*
 
 Po udanej instalacji należy **koniecznie** uruchomić serwer na porcie 3000!
